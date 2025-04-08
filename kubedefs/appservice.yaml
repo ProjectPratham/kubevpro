@@ -8,5 +8,5 @@ spec:
       port: 8080
       targetPort: 8080
   selector:
-    app.kubernetes.io/name: vproapp
+    app: vproapp
   type: ClusterIP
