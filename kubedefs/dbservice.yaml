@@ -8,5 +8,5 @@ spec:
       port: 3306
       targetPort: vprodb-port
   selector:
-    app.kubernetes.io/name: vprodb
+    app: vprodb
   type: ClusterIP
