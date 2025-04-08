@@ -8,5 +8,5 @@ spec:
       port: 5672
       targetPort: vprormq-port
   selector:
-    app.kubernetes.io/name: vprormq
+    app: vprormq
   type: ClusterIP
