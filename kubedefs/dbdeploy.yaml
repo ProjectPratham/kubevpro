@@ -27,7 +27,7 @@ spec:
               name: app-secret
               key: db-pass
       volumes:
-        - name: mypd
+        - name: vpro-db-data
           persistentVolumeClaim:
             claimName: db-pv-claim
       initContainers:
