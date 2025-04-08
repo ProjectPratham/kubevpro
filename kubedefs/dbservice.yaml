@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vprodb
+spec:
+  ports:
+    - protocol: TCP
+      port: 3306
+      targetPort: vprodb-port
+  selector:
+    app.kubernetes.io/name: vprodb
+  type: ClusterIP
