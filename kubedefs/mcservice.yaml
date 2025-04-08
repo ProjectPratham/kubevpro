@@ -8,5 +8,5 @@ spec:
       port: 11211
       targetPort: vpromc-port
   selector:
-    app.kubernetes.io/name: vpromc
+    app: vpromc
   type: ClusterIP
