@@ -5,7 +5,7 @@ metadata:
   labels:
     app: vprodb
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: vprodb
@@ -17,6 +17,9 @@ spec:
       containers:
       - name: vprodb
         image: pratham0416/vprofiledb:latest
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: vpro-db-data
         ports:
         - name: vprodb-port
           containerPort: 3306
